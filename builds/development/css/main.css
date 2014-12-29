@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Francois+One);
 @import url(http://fonts.googleapis.com/css?family=Wendy+One);
 @import url(http://fonts.googleapis.com/css?family=Niconne);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /* line 9, /home/joridos/Documentos/github/peneira-template/src/sass/bootstrap/normalize */
 html {
@@ -6214,3 +6215,189 @@ button.close {
     display: none !important; }
  }
 
+/* Basic jQuery Slider essential styles */
+/* line 3, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none; }
+
+/* line 4, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+li.bjqs-slide {
+  position: absolute;
+  display: none; }
+
+/* line 5, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999; }
+
+/* line 6, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ul.bjqs-controls.v-centered li a {
+  position: absolute; }
+
+/* line 7, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ul.bjqs-controls.v-centered li.bjqs-next a {
+  right: 0; }
+
+/* line 8, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ul.bjqs-controls.v-centered li.bjqs-prev a {
+  left: 0; }
+
+/* line 9, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+/* line 10, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ol.bjqs-markers.h-centered {
+  text-align: center; }
+
+/* line 11, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ol.bjqs-markers li {
+  display: inline; }
+
+/* line 12, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+ol.bjqs-markers li a {
+  display: inline-block; }
+
+/* line 13, /home/joridos/Documentos/github/peneira-template/src/sass/bjqs */
+p.bjqs-caption {
+  display: block;
+  width: 96%;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  bottom: 0; }
+
+/* line 10, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.navbar-default {
+  margin-bottom: 0; }
+
+/* line 14, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.brand, .brand-responsive {
+  padding: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px; }
+
+/* line 21, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.brand-responsive {
+  display: inline-block; }
+
+/* line 25, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.brand {
+  display: none; }
+
+/* line 29, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.home-section {
+  text-align: center;
+  background-image: url('../images/bg3.jpg');
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 15px; }
+
+@media (min-width: 768px) {
+  /* line 40, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .navbar-default {
+    padding: 50px; }
+
+  /* line 43, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .btn-access {
+    font-size: 20px; }
+
+  /* line 46, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .brand {
+    font-size: 60px;
+    display: inline-block; }
+
+  /* line 50, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .brand-responsive {
+    display: none; }
+
+  /* line 54, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .navbar .nav > li > .dropdown-menu::before {
+    position: absolute;
+    top: -7px;
+    right: 59px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #CCC;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: ''; }
+
+  /* line 66, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .navbar .nav > li > .dropdown-menu::after {
+    position: absolute;
+    top: -6px;
+    right: 60px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid white;
+    border-left: 6px solid transparent;
+    content: ''; }
+
+  /* line 77, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .navbar-nav > li > .dropdown-menu {
+    margin-top: 10px; }
+
+  /* line 81, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .home-section {
+    padding: 250px; }
+
+  /* line 85, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+  .team-section {
+    padding: 250px;
+    height: 200px; }
+ }
+
+/* line 91, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.item img {
+  width: 100%; }
+
+/* line 94, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+  opacity: 1; }
+
+/* line 98, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.carousel-control.left {
+  top: 40%; }
+
+/* line 101, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.carousel-control.right {
+  top: 40%; }
+
+/* line 104, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.carousel-caption {
+  top: 15%;
+  text-align: left;
+  height: auto; }
+
+/* line 109, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.carousel-caption h2 {
+  line-height: 160%; }
+
+/* line 112, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+.carousel-caption h2 span {
+  background: #428BCA;
+  padding: 10px 20px;
+  color: #fff;
+  border-left: 3px solid #fff; }
+
+/* line 118, /home/joridos/Documentos/github/peneira-template/src/sass/main.scss */
+p.caption {
+  background: #fff;
+  padding: 6px;
+  text-shadow: none;
+  color: #428BCA; }

@@ -21,8 +21,14 @@ gulp.task('jade', function () {
         .pipe(connect.reload());
 });
 
+gulp.task('images', function () {
+    return gulp.src('src/images/**/*')
+        .pipe(gulp.dest(outputDir + '/images'))
+        .pipe(connect.reload());
+});
+
 gulp.task('js', function () {
-    gulp.src(['src/js/bootstrap.js', 'src/js/jquery-1.11.2.min.js'])
+    gulp.src(['src/js/bootstrap.js', 'src/js/jquery-1.11.2.min.js', 'src/js/bjqs-1.3.min.js'])
         .pipe(gulp.dest(outputDir + '/js'))
         .pipe(connect.reload());
     return browserify('./src/js/main', { debug: env === 'development' })
@@ -50,6 +56,7 @@ gulp.task('watch', function () {
     gulp.watch('src/templates/**/*.jade', ['jade']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/sass/**/*.scss', ['sass']);
+    gulp.watch('src/images/**', ['images']);
 });
 
 gulp.task('connect', function () {
@@ -59,4 +66,4 @@ gulp.task('connect', function () {
     });
 });
 
-gulp.task('default', ['js', 'jade', 'sass', 'watch', 'connect']);
+gulp.task('default', ['js', 'jade', 'sass', 'images', 'watch', 'connect']);
