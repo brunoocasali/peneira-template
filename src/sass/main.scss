@@ -1,0 +1,123 @@
+@import "bootstrap";
+@import "bjqs";
+
+@import url(http://fonts.googleapis.com/css?family=Courgette&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+@import url(http://fonts.googleapis.com/css?family=Wendy+One);
+@import url(http://fonts.googleapis.com/css?family=Niconne);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+.navbar-default {
+	margin-bottom: 0;
+}
+.brand,
+.brand-responsive {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+}
+
+.brand-responsive {
+	display: inline-block;
+}
+
+.brand {
+	display: none;
+}
+
+.home-section {
+	text-align: center;
+	background-image: url('../images/bg3.jpg');
+	width:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+	.navbar-default {
+		padding: 50px;
+	}
+	.btn-access {
+		font-size: 20px;
+	}
+	.brand {
+		font-size: 60px;
+		display: inline-block;
+	}
+	.brand-responsive {
+		display: none;
+	}
+
+	.navbar .nav > li > .dropdown-menu::before {
+	  position: absolute;
+	  top: -7px;
+	  right: 59px;
+	  display: inline-block;
+	  border-right: 7px solid transparent;
+	  border-bottom: 7px solid #CCC;
+	  border-left: 7px solid transparent;
+	  border-bottom-color: rgba(0, 0, 0, 0.2);
+	  content: '';
+	}
+
+	.navbar .nav > li > .dropdown-menu::after {
+	  position: absolute;
+	  top: -6px;
+	  right: 60px;
+	  display: inline-block;
+	  border-right: 6px solid transparent;
+	  border-bottom: 6px solid white;
+	  border-left: 6px solid transparent;
+	  content: '';
+	}
+
+	.navbar-nav > li > .dropdown-menu {
+	    margin-top: 10px;
+	}
+
+	.home-section {
+		padding: 250px;
+	}
+
+	.team-section {
+		padding: 250px;
+		height: 200px;
+	}
+}
+
+.item img {
+	width:100%;
+}
+.carousel-control.left, .carousel-control.right {
+	background-image:none !important;
+	opacity:1;
+}
+.carousel-control.left {
+	top:40%
+}
+.carousel-control.right {
+	top:40%
+}
+.carousel-caption {
+	top:15%;
+	text-align:left;
+	height:auto;
+}
+.carousel-caption h2 {
+	line-height:160%
+}
+.carousel-caption h2 span {
+	background:#428BCA;
+	padding:10px 20px;
+	color:#fff;
+	border-left:3px solid #fff;
+}
+p.caption {
+	background:#fff;
+	padding:6px;
+	text-shadow:none;
+	color:#428BCA;
+}
