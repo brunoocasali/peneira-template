@@ -1,8 +1,8 @@
 Peneira.co Templates
 ================
 
-Run:
-==
+###Run:
+
 
 *You need node.js installed, and gulp*
 
